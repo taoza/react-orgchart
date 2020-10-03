@@ -1,36 +1,69 @@
 .orgchart.myChart {
-  background-image: linear-gradient(
-      90deg,
-      rgba(33, 90, 136, 0.15) 10%,
-      rgba(0, 0, 0, 0) 10%
-    ),
-    linear-gradient(rgba(33, 90, 136, 0.15) 10%, rgba(0, 0, 0, 0) 10%) !important;
+  background-image: none;
 }
 
+/* connector: horizontal */
 .orgchart.myChart > ul > li > ul li::before {
-  border-top-color: #215a88;
+  border-width: 1px;
+  background-color: #999999;
+  border-color: #999999;
 }
 
+/* connector: horizontal.only-child */
+.orgchart > ul > li > ul li:only-child::before {
+  width: 1px;
+}
+
+/* connector: vertical */
 .orgchart.myChart > ul > li > ul li .oc-node::before,
 .orgchart.myChart ul li .oc-node:not(:only-child)::after {
-  background-color: #215a88;
+  width: 1px;
+  background-color: #999999;
+}
+
+.orgchart.myChart ul li .oc-node:hover {
+  background-color: transparent;
+}
+
+.orgchart.myChart ul li .oc-node.selected {
+  background-color: transparent;
+}
+
+.orgchart.myChart ul li .oc-node:not(:only-child)::after {
+  bottom: -20px;
+  height: 20px;
+}
+
+.orgchart.myChart > ul > li > ul li > .oc-node::before {
+  top: -20px;
+  height: 20px;
+}
+
+.orgchart.myChart ul li .oc-node {
+  padding: 0px;
+  border: 0px;
+  margin: 10px 10px 30px 10px;
 }
 
 .orgchart.myChart .oc-node .position {
   box-sizing: border-box;
   background-color: #215a88;
   color: #fff;
-  width: 130px;
-  height: 65px;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2px;
+  color: transparent;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
 }
 
 .orgchart.myChart .oc-node .fullname {
   box-sizing: border-box;
   color: #215a88;
   background-color: #fff;
-  width: 130px;
-  height: 65px;
   padding: 2px;
-  border: 1px solid #215a88;
+  border: 0px solid #215a88;
+  width: 100px;
 }

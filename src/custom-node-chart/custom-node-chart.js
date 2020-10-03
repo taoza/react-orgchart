@@ -37,7 +37,12 @@ const CustomNodeChart = () => {
     ]
   };
 
-  return <OrganizationChart datasource={ds} chartClass="myChart" NodeTemplate={MyNode}/>;
+  return <OrganizationChart
+    datasource={ds}
+    chartClass="myChart"
+    NodeTemplate={MyNode}
+    collapsible={false}
+  />;
 };
 
 export default CustomNodeChart;

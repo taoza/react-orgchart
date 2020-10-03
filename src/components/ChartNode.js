@@ -16,7 +16,7 @@ const propTypes = {
 const defaultProps = {
   draggable: false,
   collapsible: true,
-  multipleSelect: false
+  multipleSelect: false,
 };
 
 const ChartNode = ({

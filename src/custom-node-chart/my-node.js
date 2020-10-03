@@ -8,7 +8,7 @@ const propTypes = {
 
 const MyNode = ({ nodeData }) => {
   const selectNode = () => {
-    alert("Hi All. I'm " + nodeData.name + ". I'm a " + nodeData.title + ".");
+    console.log("Hi All. I'm " + nodeData.name + ". I'm a " + nodeData.title + ".");
   };
 
   return (
