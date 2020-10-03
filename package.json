@@ -25,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/dabeng/react-orgchart/issues"
   },
-  "homepage": "https://github.com/dabeng/react-orgchart#readme",
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -44,10 +43,12 @@
   "devDependencies": {
     "@babel/cli": "^7.8.0",
     "@babel/preset-react": "^7.8.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.4.1",
     "uuid": "^7.0.2"
   },
   "peerDependencies": {
